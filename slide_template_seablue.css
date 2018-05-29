@@ -7,10 +7,28 @@
 }
 
 /* 文字の色関係 */
-.rise-enabled .reveal .slides :-webkit-any(h1, h2, h3, h4, h5, h6, p, li),
+.rise-enabled .reveal .slides :-webkit-any(h2, h3, h4, h5, h6, p, li),
 .rise-enabled .reveal .slides div.output_subarea>pre
 {
+	margin: 1px 0;
     color: white;
+}
+
+/* headerのデザイン */
+.rise-enabled .reveal .slides :-webkit-any(h1)
+{
+    padding: 0.5em 1em;
+    margin: 1px 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    vertical-align: text-top;
+}
+p {
+    margin: 0; 
+    padding: 0;
 }
 
 /* リンクハイライト */
@@ -29,12 +47,14 @@
 /* In[] の色 */
 .rise-enabled .reveal .slides div.prompt.input_prompt
 {
+	margin: 1px 0;
     color: #80D5FF;
 }
 
 /* Out[]の色 */
 .rise-enabled .reveal .slides div.prompt.output_prompt
 {
+	margin: 1px 0;
     color: #FF1A40;
 }
 
@@ -47,7 +67,9 @@
 /* コードの背景色 表面色 フォントサイズ */
 .rise-enabled .reveal .slides code
 {
-    background-color: transparent;
+	margin: 1px 0;
+	background-color: brack;
+    /*background-color: transparent; */
     color: white;
     font-size: 60%;
 }
