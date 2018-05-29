@@ -14,7 +14,12 @@
     color: white;
 }
 
-/* headerのデザイン */
+.rise-enabled .reveal .slides div.output_subarea.output_html.renderd_html.output_result>pre
+{
+	color: white;
+}
+
+/* h1のデザイン */
 .rise-enabled .reveal .slides :-webkit-any(h1)
 {
     padding: 0.5em 1em;
@@ -42,6 +47,28 @@ p {
 {
     background-color: Navy;
     /* element-overrides */
+}
+
+/* table のデザイン */
+table{
+  border-collapse:collapse;
+  margin:0 auto;
+}
+td,th{
+  padding:10px;
+}
+th{
+  color:#fff;
+  background:#005ab3;
+}
+table tr:nth-child(odd){
+  background:#e6f2ff;
+}
+table tr:nth-child(even){
+	background:#ffffff;
+}
+td{
+  border-bottom:2px solid #80bcff;
 }
 
 /* In[] の色 */
