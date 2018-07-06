@@ -1,22 +1,22 @@
 /* スライド全体のフォントの種類、サイズ */
 .rise-enabled .reveal .slides
 {
-    font-size: 20px;
+    font-size: 26px;
     font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-family: "Ricty", monospace;
 }
 
 /* 文字の色関係 */
-.rise-enabled .reveal .slides :-webkit-any(h2, h3, h4, h5, h6, p, li),
+.rise-enabled .reveal .slides :-webkit-any(h3, h4, h5, h6, p, li),
 .rise-enabled .reveal .slides div.output_subarea>pre
 {
 	margin: 1px 0;
-    color: white;
+    color: #fcf1d3;
 }
 
 .rise-enabled .reveal .slides div.output_subarea.output_html.renderd_html.output_result>pre
 {
-	color: white;
+	color: #fcf1d3;
 }
 
 /* h1のデザイン */
@@ -24,16 +24,25 @@
 {
     padding: 0.5em 1em;
     margin: 1px 0;
-    color: #FFF;
-    background: #6eb7ff;
+    color: #fcf1d3;
+    background: #44a5cb;
     border-bottom: solid 6px #3f87ce;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     vertical-align: text-top;
+    font-size: 48pt;
 }
 p {
     margin: 0; 
     padding: 0;
+}
+
+.rise-enabled .reveal .slides :-webkit-any(h2) {
+    padding: 0 0 0.25em 0.5em;/*上下 左右の余白*/
+    color: #fcf1d3;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #44a5cb;/*左線*/
+    font-size: 42pt;
 }
 
 /* リンクハイライト */
@@ -45,7 +54,7 @@ p {
 /* スライド背景色 */
 .rise-enabled .reveal
 {
-    background-color: Navy;
+    background-color: #3261ab;
     /* element-overrides */
 }
 
@@ -83,6 +92,12 @@ td{
 {
 	margin: 1px 0;
     color: #FF1A40;
+}
+
+/* Outに出力されるwarningの背景 */
+.rise-enabled .reveal .slides div.warn
+{
+    color: #44a5cb    
 }
 
 /* html表記のoutput を調整 */
